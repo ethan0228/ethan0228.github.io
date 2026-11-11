@@ -82,6 +82,7 @@ kbd { font: 500 11px/1 var(--mono); padding: 4px 6px; border-radius: 6px; border
 .badge.t-practice { --c: var(--accent); }
 .badge.t-talk { --c: #a78bfa; }
 .badge.t-resource { --c: #34d399; }
+.badge.t-weekly { --c: var(--cyan); }
 [data-theme="light"] .badge.t-talk { --c: #7c3aed; }
 [data-theme="light"] .badge.t-resource { --c: #059669; }
 .tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 11px; border-radius: 8px; font: 500 13px/1.5 var(--mono); color: var(--muted); border: 1px solid var(--line); background: var(--surface); transition: color .2s, border-color .2s; }

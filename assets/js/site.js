@@ -294,7 +294,7 @@
   // ---- 搜尋面板（⌘K） ----
   const pal = $('#palette'), pq = $('#palette-q'), pl = $('#palette-list');
   let index = null, sel = 0, lastFocus = null;
-  const TYPE = { article: '觀點文章', practice: '實踐案例', talk: '演講工作坊', resource: '資源工具' };
+  const TYPE = { article: '觀點文章', practice: '實踐案例', talk: '演講工作坊', resource: '資源工具', weekly: 'AI 趨勢週報' };
   const render = () => {
     const kw = pq.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
     const hits = (index || []).filter((i) => {
