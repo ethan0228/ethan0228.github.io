@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-Hant" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 趨勢週報｜2026 9/27–10/3｜Edu x AI</title>
+<meta name="description" content="本週最強的主線是 agent governance。">
+<meta property="og:title" content="AI 趨勢週報｜2026 9/27–10/3｜Edu x AI">
+<meta property="og:description" content="本週最強的主線是 agent governance。">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Edu x AI" href="/rss.xml">
+<script>try{var t=localStorage.getItem('eduxai-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="16" cy="16" r="2" fill="currentColor"/><circle cx="25" cy="8" r="2.6" fill="currentColor"/><path d="M21 12l2.2-2.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span class="brand-name">Edu x AI</span></a>
+    <nav class="nav-links" id="nav-links" aria-label="主選單"><a href="/">首頁</a><a href="/knowledge/" aria-current="page">知識庫</a><a href="/about/">關於</a></nav>
+    <div class="nav-tools">
+      <button class="search-btn" type="button" data-open-search aria-label="搜尋知識內容"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>搜尋</span><kbd>⌘K</kbd></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="切換深色／淺色"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg></button>
+      <button class="icon-btn nav-menu" type="button" data-menu aria-label="開啟選單" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<article class="post">
+  <header class="post-head">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="wrap narrow">
+      <nav class="crumbs mono" aria-label="麵包屑"><a href="/">首頁</a><span>/</span><a href="/knowledge/">知識庫</a><span>/</span><a href="/knowledge/?cat=ai-weekly">AI 趨勢週報</a></nav>
+      
+      <span class="badge t-article"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg>觀點文章</span>
+      <h1>AI 趨勢週報｜2026 9/27–10/3</h1>
+      <p class="post-sum">本週最強的主線是 agent governance。</p>
+      <div class="post-meta mono"><span>2026.10.03</span><span>10 分鐘閱讀</span></div>
+    </div>
+  </header>
+  <div class="wrap post-grid">
+    <aside class="toc" id="toc" aria-label="本文目錄"><p class="mono dim">ON THIS PAGE</p><ol></ol></aside>
+    <div class="post-main">
+      
+      <div class="prose" id="prose"><h2>五大趨勢</h2>
+<h3>1. Agent 從「能做事」進入「必須被治理」階段</h3>
+<h4>重點摘要分析</h4>
+<p>本週最強的主線是 agent governance。9/27 的 AWS AgentCore Gateway 與 MCP 已經把 agent 放進跨帳號、gateway、授權與審計脈絡；9/28 OpenAI agents 被指嘗試暴力存取 UN 網站，讓「外部系統看到的是疑似攻擊行為」變成具體風險；9/29 Nvidia 推出約束 rogue AI agents 的平台，MIT Technology Review 討論 agent 失控責任；9/30 到 10/01 又延伸到 OpenAI 缺席 Nvidia 聯防、Reco agent security 募資、OpenAI Jev clone 約束 swarming agents、Amazon decision model；10/03 Apple 直接因 AI agents 風險收緊 macOS Full Disk Access。</p>
+<p>這代表 agent 的重點已經不只是工具使用、browser automation 或 coding 能力，而是誰有權限、誰能中止、誰負責、如何審計、如何避免外部濫用。每日精選中多則新聞的「為何入選」都指向同一件事：agent 如果要進入真實企業、雲端帳號、本機檔案和外部網站，就必須先有 runtime guardrail、權限模型與可觀測性。</p>
+<h4>代表新聞與來源連結</h4>
+<ul>
+<li><a href="https://aws.amazon.com/blogs/machine-learning/build-a-multi-account-ai-agent-with-agentcore-gateway-and-mcp">Build a multi-account AI agent with AgentCore Gateway and MCP</a><ul>
+<li>代表來源：AWS / AgentCore / MCP</li>
+<li>為何入選：每日精選指出這是「今日最直接對應 agent runtime 與工具治理的文章」。</li>
+</ul>
+</li>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website">OpenAI agents 被指嘗試暴力存取聯合國網站</a><ul>
+<li>代表來源：The Verge / OpenAI / UN</li>
+<li>為何入選：每日精選指出 UN 網站案例更具體，適合補進 agent 安全檢查清單。</li>
+</ul>
+</li>
+<li><a href="https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/">Nvidia launches new platform for reining in rogue AI agents</a><ul>
+<li>代表來源：Nvidia / TechCrunch</li>
+<li>為何入選：每日精選指出它最接近「可產品化的治理基礎設施」。</li>
+</ul>
+</li>
+<li><a href="https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/">OpenAI 的 Jev clone 被用來約束 swarming agents</a><ul>
+<li>代表來源：TechCrunch</li>
+<li>為何入選：每日精選指出它碰到 agent 基礎設施和風險控制核心。</li>
+</ul>
+</li>
+<li><a href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents">Apple 因 AI agents 風險收緊 macOS Full Disk Access</a><ul>
+<li>代表來源：The Verge / Apple macOS 權限調整</li>
+</ul>
+</li>
+</ul>
+<h3>2. AI 工作台平台化：ChatGPT、Codex、Copilot、Shopify 都在爭奪「任務入口」</h3>
+<h4>重點摘要分析</h4>
+<p>OpenAI DevDay 相關新聞貫穿本週：9/30 Codex reusable cloud environments、ChatGPT app-like interfaces 與 automations、OpenAI app store 模式；10/01 Sign in with ChatGPT 與 Dot / Dots；10/02 Brian Chesky 提到 agent 需要自己的作業系統，Microsoft Copilot 也在重構工作入口；10/03 The Verge 實測 OpenAI Dot agent，顯示 OpenAI 想把 ChatGPT 從聊天產品推成可執行任務的平台。</p>
+<p>同時，Shopify 在 9/29 開放 checkout 給 browser-based AI agents，10/02 推出 Canvas 讓商家用聊天建立線上商店。這說明平台化不只發生在通用 AI 助理，也進入垂直 SaaS 的核心工作流。每日精選的「為何入選」多次強調這不是單一功能，而是應用入口、身份層、工作流、開發環境與商務轉換節點的重組。</p>
+<h4>代表新聞與來源連結</h4>
+<ul>
+<li><a href="https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/">OpenAI gives Codex reusable cloud environments that work across devices</a><ul>
+<li>代表來源：OpenAI / TechCrunch</li>
+<li>為何入選：每日精選指出這則最貼近日常工程工作流與 agent 長任務能力。</li>
+</ul>
+</li>
+<li><a href="https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model/">OpenAI 的新功能瞄準 app store 模式</a><ul>
+<li>代表來源：OpenAI / TechCrunch</li>
+<li>為何入選：每日精選指出它比單一功能發布更有平台戰略意義。</li>
+</ul>
+</li>
+<li><a href="https://www.inside.com.tw/article/42520-openai-sign-in-with-chatgpt-third-party-app-usage">OpenAI 要讓 ChatGPT 成為第三方 App 入口</a><ul>
+<li>代表來源：INSIDE 硬塞的</li>
+<li>為何入選：每日精選指出它聚焦「身份與平台入口」，角度較新。</li>
+</ul>
+</li>
+<li><a href="https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/">Brian Chesky：AI agents 需要自己的作業系統</a><ul>
+<li>代表來源：TechCrunch / Brian Chesky interview</li>
+<li>為何入選：每日精選指出它直接觸及 agent 需要什麼系統層抽象。</li>
+</ul>
+</li>
+<li><a href="https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/">Shopify 推出 Canvas，用聊天建立線上商店</a><ul>
+<li>代表來源：Shopify / TechCrunch</li>
+<li>為何入選：每日精選指出 Shopify 直接把核心建店流程改成對話式操作。</li>
+</ul>
+</li>
+</ul>
+<h3>3. Coding agent 正從 prompt 技巧進入「可程式化、可驗收、可成本控管」工程</h3>
+<h4>重點摘要分析</h4>
+<p>本週 coding agent 線索很密。9/27 Proaction with Codex 說明 Codex 已進入 sales / ops workflow；同日 AWS NarrateAI 把 LLM QA 拉到 production-ready；9/28 AI coding harness、Spotify 用 Gemini 幫 Claude Code 降成本；9/29 Sonnet 5.5 主打更便宜更快的工作夥伴；10/01 DHH 宣稱不再手寫程式碼，轉向 agent 協作；10/02 Claude Code skills 可能降低效能並增加 token；10/03 Claude Code Mod 允許用 TypeScript 客製 AI 助手行為。</p>
+<p>這些新聞組合起來，重點不是「AI 更會寫程式」而已，而是 coding agent 正在變成一個需要 harness、QA、skill governance、mod / hook、成本分層與任務驗收的工程系統。</p>
+<h4>代表新聞與來源連結</h4>
+<ul>
+<li><a href="https://openai.com/index/proaction">Proaction boosts sales 60% and saves 75+ hours with Codex</a><ul>
+<li>代表來源：OpenAI / Codex / Proaction</li>
+<li>為何入選：每日精選指出它和 Codex 工作流、行政自動化、可驗收任務設計直接相關。</li>
+</ul>
+</li>
+<li><a href="https://www.techbang.com/posts/132968-harness-engineering-ai-coding-guides-sensors">AI 寫程式需要 Harness：專屬安全規範才是關鍵</a><ul>
+<li>代表來源：T客邦 / Harness engineering</li>
+<li>為何入選：每日精選指出它最能沉澱成可重複使用的 agent 工程方法。</li>
+</ul>
+</li>
+<li><a href="https://www.techbang.com/posts/133138-spotify-claude-code-90-percent-token-savings">Spotify 工程師用 Gemini 幫 Claude Code 打雜，節省九成費用</a><ul>
+<li>代表來源：T客邦 / Spotify / Claude Code / Gemini</li>
+<li>為何入選：每日精選指出它能轉成 Codex / Claude Code 成本控制原則。</li>
+</ul>
+</li>
+<li><a href="https://www.techbang.com/posts/132695-claude-code-skill-degradation-testing-fix">Claude Code 自訂技能可能降低效能並增加 token 消耗</a><ul>
+<li>代表來源：T客邦整理 / 原工程師測試</li>
+</ul>
+</li>
+<li><a href="https://www.inside.com.tw/article/42545-claude-code-mod-typescript-plugin-customize">Anthropic 推出 Claude Code Mod，用 TypeScript 客製 AI 助手行為</a><ul>
+<li>代表來源：Anthropic / Claude Code Mod 產品更新</li>
+<li>為何入選：每日精選指出它牽涉 agent 行為層的可程式化擴充。</li>
+</ul>
+</li>
+</ul>
+<h3>4. AI 基礎設施戰線往上游與區域市場延伸：推論、晶片設計、地端算力、台灣 AI cloud 都成為焦點</h3>
+<h4>重點摘要分析</h4>
+<p>本週 AI infra 不只是 GPU 不夠用，而是整條供應鏈正在重組。9/27 AI data center 能源與污染代價、Apple local AI / Mac cluster；9/28 Google AI Pro Colab、Epic 警告 AI 算力外部性；9/29 AMD 收購 World Labs、Modal Labs 推論平台高估值；9/30 中國 Nvidia RTX Pro 5500、NVIDIA Kumo Tabular；10/02 Olmo-core 3 開放 MoE 訓練基礎設施、Synopsys 與 OpenAI 合作晶片設計 AI、台灣企業 Kubernetes 導入落差；10/03 NVIDIA DGX Spark、Broadcom-Anthropic 循環融資疑慮、GMI Cloud 擴充美國、台灣與亞太算力。</p>
+<h4>代表新聞與來源連結</h4>
+<ul>
+<li><a href="https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/">Modal Labs 傳將以 157.5 億美元估值募資 7.5 億美元</a><ul>
+<li>代表來源：Modal Labs / TechCrunch</li>
+<li>為何入選：每日精選指出 Modal 代表 AI infra 從訓練到推論平台的資本流向。</li>
+</ul>
+</li>
+<li><a href="https://huggingface.co/blog/allenai/olmocore3">Olmo-core 3 開放大型 MoE 訓練基礎設施</a><ul>
+<li>代表來源：Allen AI / Hugging Face Blog</li>
+<li>為何入選：每日精選指出它提供可累積的技術脈絡，對未來開源模型能力有指標意義。</li>
+</ul>
+</li>
+<li><a href="https://www.inside.com.tw/article/42533-synopsys-openai-gpt-synopsys-chip-design-ai-model">Synopsys 與 OpenAI 合作晶片設計 AI，依成果分潤</a><ul>
+<li>代表來源：Synopsys / OpenAI 合作新聞</li>
+<li>為何入選：每日精選指出它牽涉模型能力、EDA 工具、算力與商業分潤。</li>
+</ul>
+</li>
+<li><a href="https://www.inside.com.tw/article/42541-broadcom-anthropic-42-billion-ai-financing">Broadcom 擬融資 Anthropic 420 億美元，引發循環融資疑慮</a><ul>
+<li>代表來源：INSIDE 硬塞的 / Broadcom-Anthropic financing report</li>
+<li>為何入選：每日精選指出它揭示 AI 產業的資金與算力結構風險。</li>
+</ul>
+</li>
+<li><a href="https://www.inside.com.tw/article/42540-GMI%20Cloud-b-round">GMI Cloud 完成逾 6.6 億美元 B 輪融資，擴充美國、台灣與亞太 AI 算力</a><ul>
+<li>代表來源：GMI Cloud 融資公告 / INSIDE</li>
+<li>為何入選：每日精選指出這則涉及台灣與亞太 AI 算力布局。</li>
+</ul>
+</li>
+</ul>
+<h3>5. AI 正重塑內容來源、搜尋流量與知識可信度，來源驗證變成核心能力</h3>
+<h4>重點摘要分析</h4>
+<p>本週內容生態線也很清楚。9/28 Cloudflare 討論 AI crawler、Google Zero、出版者流量與內容授權；同日 Pew Research 顯示約 35% 新網頁已有 AI 生成痕跡，點出 AI 餵養 AI 的資料污染問題；9/30 Hugging Face 文章主張 MCP agents 需要 source-aware verification；10/01 Reddit 因 AI bot 削減 Old Reddit / RSS / 公開 API；10/02 法院駁回 Google AI Overviews 反壟斷訴訟；10/03 Allen AI AstaBrief 開源快速報告生成模型與 MIT Technology Review 提醒 LLM 不會真正推理，則從工具能力與可靠性角度補上知識生產風險。</p>
+<p>每日精選中對 Cloudflare 的入選理由是「把 AI 抓取、出版者、平台與基礎設施角色串在一起」；對 source-aware verification 的入選理由是「答對」要推進到「可驗證、可引用、可追責」；對 AI 生成網頁的入選理由是「來源可信度與代表來源選擇會變得更重要」。</p>
+<h4>代表新聞與來源連結</h4>
+<ul>
+<li><a href="https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising">Can Cloudflare CEO Matthew Prince save the web from AI?</a><ul>
+<li>代表來源：The Verge / Cloudflare</li>
+<li>為何入選：每日精選指出它把 AI 抓取、出版者、平台與基礎設施角色串在一起。</li>
+</ul>
+</li>
+<li><a href="https://www.techbang.com/posts/132603-pew-research-one-third-new-web-pages-ai-generated">ChatGPT 問世後，35% 新網頁已有 AI 化痕跡</a><ul>
+<li>代表來源：Pew Research / T客邦</li>
+<li>為何入選：每日精選指出它提供可追蹤比例與「AI 餵養 AI」風險框架。</li>
+</ul>
+</li>
+<li><a href="https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source">Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents</a><ul>
+<li>代表來源：Multiverse Computing / Hugging Face</li>
+<li>為何入選：每日精選指出它提供可沉澱成工作流品質規範的方法論。</li>
+</ul>
+</li>
+<li><a href="https://techcrunch.com/2026/09/30/reddit-is-killing-rss-feeds-ending-public-api-access-because-of-ai-bots/">Reddit 因 AI bot 削減 Old Reddit / RSS / 公開 API 存取</a><ul>
+<li>代表來源：TechCrunch</li>
+<li>為何入選：每日精選指出它是平台為了 AI scraping 改變資料可得性的代表案例。</li>
+</ul>
+</li>
+<li><a href="https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed">法院駁回 Google AI Overviews 反壟斷訴訟</a><ul>
+<li>代表來源：The Verge / court case</li>
+<li>為何入選：每日精選指出它反映 AI 平台與內容生態的權力關係。</li>
+</ul>
+</li>
+</ul>
+<h2>本週優先深讀建議</h2>
+<ol>
+<li>Apple Full Disk Access + AWS AgentCore Gateway：整理個人 agent 與企業 agent 的權限模型。</li>
+<li>Codex reusable cloud environments + ChatGPT apps / automations：判斷 AI 工作台平台化對日常開發與筆記流程的影響。</li>
+<li>Synopsys x OpenAI + GMI Cloud：觀察 AI infra 如何連回台灣與晶片設計上游。</li>
+</ol>
+<h2>一句話總結</h2>
+<p>本週 AI 趨勢的核心不是單一模型更強，而是 agent 開始進入真實系統：它需要權限治理、持久工作環境、可程式化擴充、可負擔的算力，以及可追溯的知識來源。</p>
+</div>
+      
+      <div class="post-tags"><a class="tag" href="/knowledge/?tag=AI%20%E8%B6%A8%E5%8B%A2%E9%80%B1%E5%A0%B1">#AI 趨勢週報</a><a class="tag" href="/knowledge/?tag=agent">#agent</a><a class="tag" href="/knowledge/?tag=AI%E6%B2%BB%E7%90%86">#AI治理</a><a class="tag" href="/knowledge/?tag=AI%E5%9F%BA%E7%A4%8E%E8%A8%AD%E6%96%BD">#AI基礎設施</a></div>
+      <div class="post-share"><button class="btn ghost" type="button" data-copy>複製文章連結</button></div>
+      <nav class="pns" aria-label="上一篇與下一篇"><a class="pn" href="/k/ai-weekly-2026-09-26/"><span class="mono dim">← 上一篇</span><b>AI 趨勢週報｜2026 9/20–9/26</b></a><a class="pn" href="/k/maker-center-to-curriculum/"><span class="mono dim">下一篇 →</span><b>從 Maker 教育到數位課程創新：自造中心的實踐</b></a></nav>
+    </div>
+  </div>
+</article>
+<section class="sec wrap"><div class="sec-head reveal">
+    <div><p class="eyebrow mono"><b>→</b> / RELATED</p><h2>延伸閱讀</h2></div>
+    
+  </div><div class="grid"><article class="card reveal" data-type="article" data-cat="ai-weekly" data-tags="AI 趨勢週報|Agent|AI基礎設施" data-text="ai 趨勢週報｜2026 11/1–11/7 本週最重要的變化不是又多了一個模型功能，而是 ai 的競爭單位正在升級為「可取得電力與資本的基建、可被授權與驗證的 agent 工作流、以及可在真實或模擬世界被評測的系統」。 ai 趨勢週報 agent ai基礎設施 ai 趨勢週報">
+  <a class="card-link" href="/k/ai-weekly-2026-11-07/" aria-label="AI 趨勢週報｜2026 11/1–11/7"></a>
+  <div class="cover gen h0 " aria-hidden="true">
+    <span class="cover-glyph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg></span>
+    <span class="cover-code mono">ARTICLE / 31CC</span>
+  </div>
+  <div class="card-body">
+    <div class="meta mono"><span class="badge t-article"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg>觀點文章</span><span>AI 趨勢週報</span></div>
+    <h3>AI 趨勢週報｜2026 11/1–11/7</h3>
+    <p>本週最重要的變化不是又多了一個模型功能，而是 AI 的競爭單位正在升級為「可取得電力與資本的基建、可被授權與驗證的 agent 工作流、以及可在真實或模擬世界被評測的系統」。</p>
+    <div class="card-foot mono"><span>2026.11.07</span><span>9 MIN</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+  </div>
+</article><article class="card reveal" data-type="article" data-cat="ai-weekly" data-tags="AI 趨勢週報|AI-agent|AI基建|AI治理" data-text="ai 趨勢週報｜2026 10/25–10/31 本週最明顯的商業化訊號，不是單一模型功能，而是模型被嵌進 servicenow、oracle apps、google docs 與瀏覽器等既有工作面。 ai 趨勢週報 ai-agent ai基建 ai治理 ai 趨勢週報">
+  <a class="card-link" href="/k/ai-weekly-2026-10-31/" aria-label="AI 趨勢週報｜2026 10/25–10/31"></a>
+  <div class="cover gen h0 " aria-hidden="true">
+    <span class="cover-glyph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg></span>
+    <span class="cover-code mono">ARTICLE / 0123</span>
+  </div>
+  <div class="card-body">
+    <div class="meta mono"><span class="badge t-article"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg>觀點文章</span><span>AI 趨勢週報</span></div>
+    <h3>AI 趨勢週報｜2026 10/25–10/31</h3>
+    <p>本週最明顯的商業化訊號，不是單一模型功能，而是模型被嵌進 ServiceNow、Oracle Apps、Google Docs 與瀏覽器等既有工作面。</p>
+    <div class="card-foot mono"><span>2026.10.31</span><span>8 MIN</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+  </div>
+</article><article class="card reveal" data-type="article" data-cat="ai-weekly" data-tags="AI 趨勢週報|AI趨勢|Agent|AI基礎設施" data-text="ai 趨勢週報｜2026 10/18–10/24 本週不是「模型又更強」的一週，而是 agent 開始碰到真實世界的入口、權限、成本與治理邊界 的一週。10/24 的安全隔離、儲存擴展與企業導入材料補強了一點：可靠性不只存在於單一 agent 的 prompt，而是由執行環境、資料生命週期、可驗證任務和組織流程共同決定。 ai 趨勢週報 ai趨勢 agent ai基礎設施 ai 趨勢週報">
+  <a class="card-link" href="/k/ai-weekly-2026-10-24/" aria-label="AI 趨勢週報｜2026 10/18–10/24"></a>
+  <div class="cover gen h0 " aria-hidden="true">
+    <span class="cover-glyph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg></span>
+    <span class="cover-code mono">ARTICLE / 2BFB</span>
+  </div>
+  <div class="card-body">
+    <div class="meta mono"><span class="badge t-article"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg>觀點文章</span><span>AI 趨勢週報</span></div>
+    <h3>AI 趨勢週報｜2026 10/18–10/24</h3>
+    <p>本週不是「模型又更強」的一週，而是 Agent 開始碰到真實世界的入口、權限、成本與治理邊界 的一週。10/24 的安全隔離、儲存擴展與企業導入材料補強了一點：可靠性不只存在於單一 agent 的 prompt，而是由執行環境、資料生命週期、可驗證任務和組織流程共同決定。</p>
+    <div class="card-foot mono"><span>2026.10.24</span><span>10 MIN</span><span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+  </div>
+</article></div></section>
+</main>
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div>
+      <a class="brand" href="/"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="16" cy="16" r="2" fill="currentColor"/><circle cx="25" cy="8" r="2.6" fill="currentColor"/><path d="M21 12l2.2-2.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span class="brand-name">Edu x AI</span></a>
+      <p class="mono dim">科技 · 教育 · AI · STEAM · Maker</p>
+    </div>
+    <div class="footer-links">
+      <a href="/knowledge/">知識庫</a><a href="/about/">關於</a><a href="/rss.xml">RSS</a>
+    </div>
+    <p class="mono dim">© 2026 Edu x AI</p>
+  </div>
+</footer>
+<div class="palette" id="palette" hidden>
+  <div class="palette-box" role="dialog" aria-modal="true" aria-label="搜尋知識內容">
+    <div class="palette-input"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="palette-q" placeholder="搜尋標題、摘要或標籤…" autocomplete="off"><kbd>Esc</kbd></div>
+    <ul class="palette-list" id="palette-list"></ul>
+  </div>
+</div>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
