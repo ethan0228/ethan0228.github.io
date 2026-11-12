@@ -19,6 +19,19 @@
     menuBtn.setAttribute('aria-expanded', open);
   });
 
+  // ---- 下拉子選單：沒有連結的主項目用點擊展開 ----
+  $$('.nav-item > button').forEach((b) => b.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const item = b.parentElement, open = !item.classList.contains('open');
+    $$('.nav-item.open').forEach((x) => x.classList.remove('open'));
+    item.classList.toggle('open', open);
+    b.setAttribute('aria-expanded', open);
+  }));
+  document.addEventListener('click', () => $$('.nav-item.open').forEach((x) => {
+    x.classList.remove('open');
+    x.firstElementChild.setAttribute('aria-expanded', 'false');
+  }));
+
   // ---- 捲動進度 ----
   const bar = $('.progress i');
   const onScroll = () => {
