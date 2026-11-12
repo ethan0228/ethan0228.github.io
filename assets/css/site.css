@@ -195,6 +195,8 @@ kbd { font: 500 11px/1 var(--mono); padding: 4px 6px; border-radius: 6px; border
 .page-head.nf { padding: 120px 0 160px; }
 .page-head .cta { margin-top: 28px; }
 
+.page-body { padding: 8px 0 96px; }
+
 /* ---------- 知識庫 ---------- */
 .lib { padding-bottom: 96px; }
 .filters { display: grid; gap: 14px; padding: 22px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
@@ -245,6 +247,17 @@ kbd { font: 500 11px/1 var(--mono); padding: 4px 6px; border-radius: 6px; border
 .prose pre { padding: 18px 20px; border-radius: 14px; border: 1px solid var(--line); background: var(--bg2); overflow-x: auto; line-height: 1.7; }
 .prose pre code { padding: 0; border: 0; background: none; font-size: 14px; color: color-mix(in srgb, var(--cyan) 55%, var(--text)); }
 .prose img { border-radius: 14px; border: 1px solid var(--line); }
+/* 圖片的位置與文繞圖（寬度寫在 style 裡） */
+.prose img.img-center { display: block; margin-inline: auto; }
+.prose img.img-right { display: block; margin-left: auto; }
+.prose img.img-left { display: block; margin-right: auto; }
+.prose img.img-float-left { float: left; margin: .3em 1.6em .8em 0; }
+.prose img.img-float-right { float: right; margin: .3em 0 .8em 1.6em; }
+.prose h2, .prose h3, .prose hr, .prose pre, .prose table { clear: both; }
+.prose::after { content: ""; display: block; clear: both; }
+@media (max-width: 600px) {
+  .prose img.img-float-left, .prose img.img-float-right { float: none; display: block; width: 100% !important; margin: 1em 0; }
+}
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.4em 0; }
 .prose table { display: block; overflow-x: auto; border-collapse: collapse; font-size: 15px; width: 100%; }
 .prose th, .prose td { padding: 10px 16px; border: 1px solid var(--line); text-align: left; min-width: 110px; }
